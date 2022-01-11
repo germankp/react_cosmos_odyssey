@@ -1,0 +1,96 @@
+.OrdersHolder {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.493);
+  z-index: 200;
+  display: none;
+}
+
+.OrdersNoDisplay {
+  display: block;
+}
+
+.OrdersList {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 80%;
+  min-height: 250px;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeCart 700ms normal forwards;
+}
+
+@keyframes fadeCart {
+  from {
+    margin-top: 153px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.OrdersCaption {
+  border-bottom: 1px dotted rgb(56, 56, 56);
+  color: black;
+  padding: 9px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.OrdersCaption>button {
+  border: unset;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.OrdersItems {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.OrdersItems>div {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+.OrdersItems>div>div>div {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px dotted black;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+.OrdersItems>div>div {
+  overflow: auto;
+  max-height: 280px;
+  border: 2px solid black;
+}
+
+.OrdersItems>div>span:nth-child(1) {
+  font-size: 21px;
+  font-weight: bolder;
+}

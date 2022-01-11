@@ -1,0 +1,31 @@
+.travelsHolder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  transition: all 200ms;
+  background-color: rgb(12, 115, 254);
+}
+
+.activeTravel {}
+
+@media only screen and (max-width: 800px) {
+  .travelsHolder {
+    padding-left: unset;
+    padding-right: unset;
+    width: 100%;
+  }
+}
+
+.selectorsHolder {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(12, 115, 254);
+  gap: 2px;
+  border-radius: 10px;
+}
